@@ -1,0 +1,170 @@
+$cinco: 5%;
+$inline: inline-block;
+$dos: 2%;
+$diez: 10%;
+$veinte: 20%;
+$cincuenta: 50%;
+$height: 500px;
+$blue: #5bc0de;
+$cien: 100%;
+
+*{
+    font-family: 'Lato'
+}
+header{
+    .container{
+        height: 50px;
+        width: $cien;
+        background-color: white;
+        position: fixed;
+        z-index: 10;
+    }
+}
+nav{
+    a{
+     color: #555252;
+     text-decoration: none;
+     display: $inline;
+        :visited{
+            color: #1C1C1C;
+        }
+        :active{
+           color:#686464;
+        }
+        :hover{
+           color:$blue;
+        }
+    }
+     ul{
+        float: right;
+        padding-top: $dos;
+        margin-right: $cinco;
+        padding-right: $diez;
+    }
+    li{
+        list-style-type: none;
+        margin-left: $cincuenta;
+        display: $inline;
+    }
+}
+.logo{
+    display: $inline;
+    width: $cincuenta;
+    margin-left: $veinte;
+}
+
+.bg-slide{
+    background-image: url(../images/1920x665-1.jpg);
+    height: $height;
+    background-size: cover;
+    h1{
+    font-size: 4em;
+}
+}
+.black{
+    background-color: rgba(3, 0, 0, 0.5);
+    height: $height;
+    color: white;
+    .col-md-6{
+        padding-top:$diez;
+        p{
+            padding-top: $dos;
+         }
+    }
+}
+/*botones*/
+.btn {
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 2px solid $blue;
+  margin: $dos;
+}
+.btn-info {
+  color: $blue;
+  background-color: transparent;
+  border-color: $blue;
+}
+/*ANDROID Y IOS*/
+.icons{
+    i,p{
+        display: $inline;
+        margin-left: $dos;
+    }
+}
+/*segunda seccion*/
+.segunda-sec{
+    .container{
+        padding-top: $cinco;
+        padding-bottom: $cinco;
+        color: gray;
+    }
+    img{
+        width: $cien;
+    }
+    strong{
+        color: $blue;
+    }
+    h1{
+        margin-bottom: $cinco;
+    }
+}
+.tercera-sec{
+    @extend .segunda-sec;
+    background-color: #F0EDED;
+    img{
+        padding: $diez;
+    }
+    .col-md-4,.col-xs-12,h4{
+        margin-top: $cinco;
+        p{
+        padding-bottom: $diez;
+        margin-right: $veinte;
+        line-height: 2;
+    }
+    }
+}
+footer{
+    padding-top: $cinco;
+    padding-bottom: $dos;
+    a{
+        border-radius: $cien;
+        border: 2px solid $blue;
+        padding: 10px 12px;
+        text-decoration: none;
+        margin: 5px;
+        i{
+            color: $blue;
+        }
+    }
+    b{
+        color: $blue;
+    }
+    p{
+        color: gray;
+        margin-top: $dos;
+    }
+}
+/*///////////////////MEDIA QUERIES////////////////////////*/
+@media screen and (max-width: 600px) {
+    $height: 400px;
+    .logo{
+        width: $cien;
+        margin-top: $cinco;
+    }
+    .bg-slide, .black{
+        height: $height;
+        h1{
+            font-size: 2em;
+        }
+    }
+    footer{
+        p{
+            margin-top: $cinco;
+        }
+    }
+    .black{
+        .col-md-6{
+            padding-top:$veinte;
+        }
+    }
+}

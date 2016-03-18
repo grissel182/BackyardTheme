@@ -1,0 +1,126 @@
+* {
+  font-family: "Lato"; }
+
+header .container {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10; }
+
+nav a {
+  color: #555252;
+  text-decoration: none;
+  display: inline-block; }
+  nav a :visited {
+    color: #1C1C1C; }
+  nav a :active {
+    color: #686464; }
+  nav a :hover {
+    color: #5bc0de; }
+nav ul {
+  float: right;
+  padding-top: 2%;
+  margin-right: 5%;
+  padding-right: 10%; }
+nav li {
+  list-style-type: none;
+  margin-left: 50%;
+  display: inline-block; }
+
+.logo {
+  display: inline-block;
+  width: 50%;
+  margin-left: 20%; }
+
+.bg-slide {
+  background-image: url(../images/1920x665-1.jpg);
+  height: 500px;
+  background-size: cover; }
+  .bg-slide h1 {
+    font-size: 4em; }
+
+.black {
+  background-color: rgba(3, 0, 0, 0.5);
+  height: 500px;
+  color: white; }
+  .black .col-md-6 {
+    padding-top: 10%; }
+    .black .col-md-6 p {
+      padding-top: 2%; }
+
+/*botones*/
+.btn {
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 2px solid #5bc0de;
+  margin: 2%; }
+
+.btn-info {
+  color: #5bc0de;
+  background-color: transparent;
+  border-color: #5bc0de; }
+
+/*ANDROID Y IOS*/
+.icons i, .icons p {
+  display: inline-block;
+  margin-left: 2%; }
+
+/*segunda seccion*/
+.segunda-sec .container, .tercera-sec .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: gray; }
+.segunda-sec img, .tercera-sec img {
+  width: 100%; }
+.segunda-sec strong, .tercera-sec strong {
+  color: #5bc0de; }
+.segunda-sec h1, .tercera-sec h1 {
+  margin-bottom: 5%; }
+
+.tercera-sec {
+  background-color: #F0EDED; }
+  .tercera-sec img {
+    padding: 10%; }
+  .tercera-sec .col-md-4, .tercera-sec .col-xs-12, .tercera-sec h4 {
+    margin-top: 5%; }
+    .tercera-sec .col-md-4 p, .tercera-sec .col-xs-12 p, .tercera-sec h4 p {
+      padding-bottom: 10%;
+      margin-right: 20%;
+      line-height: 2; }
+
+footer {
+  padding-top: 5%;
+  padding-bottom: 2%; }
+  footer a {
+    border-radius: 100%;
+    border: 2px solid #5bc0de;
+    padding: 10px 12px;
+    text-decoration: none;
+    margin: 5px; }
+    footer a i {
+      color: #5bc0de; }
+  footer b {
+    color: #5bc0de; }
+  footer p {
+    color: gray;
+    margin-top: 2%; }
+
+/*///////////////////MEDIA QUERIES////////////////////////*/
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100%;
+    margin-top: 5%; }
+
+  .bg-slide, .black {
+    height: 400px; }
+    .bg-slide h1, .black h1 {
+      font-size: 2em; }
+
+  footer p {
+    margin-top: 5%; }
+
+  .black .col-md-6 {
+    padding-top: 20%; } }
+
+/*# sourceMappingURL=main.css.map */
